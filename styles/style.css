@@ -50,7 +50,6 @@ ul,li { list-style-type: none;
     display: flex;
     align-items: center;
     font-size: 25px;
-   
 }
 
 .header-navigation li {
@@ -149,5 +148,66 @@ ul,li { list-style-type: none;
 
     .back-link {
         font-size: 50px;
+        font-family: 'VT323', monospace;
         
     }
+
+    /* README SECTION */
+    .readme-content {
+     text-align: center;
+    }
+
+@media (max-width: 550px) {
+header {
+    padding: 0 30px;
+}
+ main {
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 5px 5px rgb(39, 39, 39);;
+ }
+
+ h1 {
+    font-size: 25px;
+ }
+
+ h2 {
+    font-size: 20px;
+ }
+
+    .header-navigation li {
+        margin-right: 15px;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: inline-block;
+    }
+    .sidebar-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+    .sidebar-item {
+        margin: 0;
+    }
+
+    .project-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-content p {
+        font-size: 20px;
+    }
+}
