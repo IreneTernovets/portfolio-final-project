@@ -10,9 +10,10 @@ ul,li { list-style-type: none;
  main {
         background-color: rgb(216, 216, 216);
         padding: 50px;
-        max-width: 50%;
-        flex-grow: 6;
+        max-width: 60%;
         margin: auto;
+
+        
     }
 
 /* header*/
@@ -72,6 +73,9 @@ ul,li { list-style-type: none;
 .sidebar {
     padding: 10px;
     margin: 30px;
+    position: absolute;
+    top: 20%;
+    right: 0;
   
 }
     .sidebar-list {
