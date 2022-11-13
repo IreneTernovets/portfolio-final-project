@@ -66,6 +66,7 @@ ul,li { list-style-type: none;
         background-color: rgb(75, 75, 75);
         display: grid;
         grid-template-columns: repeat(8, 1fr);
+        column-gap: 20px;
     }
 
     .homepage-photo {
@@ -83,8 +84,9 @@ ul,li { list-style-type: none;
 .sidebar {
     padding: 10px;
     display: grid;
-    justify-content: center;
+    justify-content: start;
     align-content: center;
+
 }
     .sidebar-list {
         display: flex;
@@ -107,4 +109,45 @@ ul,li { list-style-type: none;
     .sidebar-description {
         background-color: rgb(177, 174, 174);
         margin-top: 5px;
+    }
+
+    /* PROJECT PAGE*/
+
+    .project-main {
+        display: grid;
+        grid-template-rows: fit-content(1fr) 1fr;
+        row-gap: 50px;
+    }
+
+    .project-content {
+     display: grid;
+     grid-template-columns: fit-content(50%) 1fr;
+     column-gap: 30px;
+    
+    }
+    .project-img {
+    object-fit: cover;
+    width: 100%;
+    align-self: center;
+    
+    
+    }
+
+    .project-description {
+        align-self: center;
+    }
+    .project-info {
+        align-self: center;
+        
+    }
+    .project-link {
+     background-color: rgb(45, 44, 44);
+     color: #fff;
+     padding: 5px 10px;
+
+    }
+
+    .back-link {
+        font-size: 50px;
+        
     }
