@@ -19,7 +19,7 @@
                     <ul class="header-navigation">
                         <li class="logo"><img src="/img/logo.png" alt=""></li>
                         <li><a href="/">Home</a></li>
-                        <li> <a href="/about.html">About</a></li>
+                        <li><a href="/about.html">About</a></li>
                         <li>Articles</li>
                     </ul>
                 </nav>
@@ -31,26 +31,21 @@
             </div>
         </header>
         <div class="main-container">
-        <main>
-            <img class="homepage-photo" src="/img/logo.png" alt="">
-            
-            <div class="homepage-info">
-                <h1>Hello, my name is Irena</h1>
-                <h2>Front-end Developer, based in Europe</h2>
-                <p>This is your last chance. After this, there is no turning back. You take the blue pill – the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill – you stay in Wonderland and I show you how deep the rabbit-hole goes.</p> 
+        <main class="contact-main">
+            <form class="contact-form" action="https://formsubmit.co/terna.legends@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <textarea placeholder="Your Message" name="message" rows="10" required></textarea>
+                <button class="contact-form-buton" type="submit">Send message</button>
+           </form>
+           <div class="social-links">
+            <a href="https://www.linkedin.com/in/irene-ternovets-189ab8153/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/terna_may"><i class="fa-brands fa-twitter"  target="_blank"></i></a>
+            <a href="https://github.com/IreneTernovets"><i class="fa-brands fa-github"  target="_blank"></i></a>
+            <a href="https://www.instagram.com/terna_legends/"><i class="fa-brands fa-instagram"  target="_blank"></i></a>
+           </div>
+        <a class="back-link" href="/"><i class="fa-sharp fa-solid fa-left-long"></i> <span>Back</span></a>
         </main>
-        <div class="sidebar">
-         <ul class="sidebar-list">
-            <li class="sidebar-item">
-                <a href="/readme.html"><i class="fa-sharp fa-solid fa-file"></i></a>
-                <a href="/readme.html" class="sidebar-description">Read me</span>
-            </li>
-            <li class="sidebar-item"><a href="/projects.html"><i class="fa-sharp fa-solid fa-floppy-disk"></a></i>
-                <a href="/projects.html" class="sidebar-description">Projects</a></li>
-            <li class="sidebar-item"><a href="/contact.html"><i class="fa-solid fa-square-share-nodes"></i></a> 
-                <a href="/contact.html" class="sidebar-description">Social</a></li>
-         </ul>
-        </div>
     </div>
     </div>
 

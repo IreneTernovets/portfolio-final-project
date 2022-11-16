@@ -192,9 +192,42 @@ ul,li { list-style-type: none;
         color: #fff;
         background-color: #000
     }
-    .answer {
+    
+    /*CONTACT PAGE*/
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border: 3px solid #000;
+        padding: 10px;
     }
 
+    .contact-form-buton {
+        width: fit-content;
+        display: block;
+        margin: 0 auto;
+        background-color: #000;
+        color: #fff;
+        padding: 5px 20px;
+    }
+
+    .social-links{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-family: 'IBM Plex Mono', monospace;
+      }
+
+    .social-links a {
+        font-size: 35px;
+    }
+    
 @media (max-width: 550px) {
 header {
     padding: 0 30px;
