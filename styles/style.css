@@ -149,12 +149,44 @@ ul,li { list-style-type: none;
     .back-link {
         font-size: 50px;
         font-family: 'VT323', monospace;
-        
     }
 
     /* README SECTION */
     .readme-content {
      text-align: center;
+    }
+
+    /*ABOUT ME PAGE */
+
+    .questionnare-section {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+
+    }
+
+    .questionaare-head {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+
+    .questionaare-head img {
+        max-width: 20%;
+        border: 10px solid #fff;
+    }
+    .question-answer-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .question {
+        color: #fff;
+        background-color: #000
+    }
+    .answer {
     }
 
 @media (max-width: 550px) {
@@ -210,4 +242,15 @@ header {
     .project-content p {
         font-size: 20px;
     }
+
+    .questionaare-head {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .questionaare-head h4 {
+        font-size: 14px;
+    }
+    
 }
