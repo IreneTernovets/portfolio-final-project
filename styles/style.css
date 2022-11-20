@@ -138,10 +138,17 @@ header {
   width: 100%;
   align-self: center;
 }
+
+.project-title{
+  text-align: center;
+}
+
+.project-title a{
+  font-weight: 700;
+}
 .project-main h3 {
   font-family: var(--secondary-font);
   font-size: 25px;
-  text-align: center;
   text-decoration: underline;
 }
 
