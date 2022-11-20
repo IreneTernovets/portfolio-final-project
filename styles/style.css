@@ -1,321 +1,327 @@
 :root {
-    --main-font: 'IBM Plex Mono', monospace;
-    --secondary-font: 'VT323', monospace;
+  --main-font: "IBM Plex Mono", monospace;
+  --secondary-font: "VT323", monospace;
 }
 
-body{
-    background-color: black;
-    font-family: var(--main-font)
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--main-font);
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-ul,li { list-style-type: none;
-    list-style-position:inside;
-    margin:0;
-    padding:0; }
+ul,
+li {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
 
- main {
-        background-color: rgb(216, 216, 216);
-        padding: 50px;
-        grid-column: 1 / 8;
-        margin: 3% 0 3% 10%;
-        box-shadow: 20px 10px  rgb(39, 39, 39);
-    }
+main {
+  background-color: rgb(216, 216, 216);
+  padding: 50px;
+  grid-column: 1 / 8;
+  margin: 3% 0 3% 10%;
+  box-shadow: 20px 10px rgb(39, 39, 39);
+  
+}
 
 /* header*/
-    header{ 
-        background-color: #fff;
-        border-radius: 15px 15px 0 0;
-        padding: 0 40px;
-        font-family: var(--secondary-font);
-        
-        
-    }
+header {
+  background-color: #fff;
+  border-radius: 15px 15px 0 0;
+  padding: 0 40px;
+  font-family: var(--secondary-font);
+}
 .wrapper {
-    padding: 10px;
+  min-height: calc(100vh - 2rem);
+  background-color: black;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 .header-items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo img {
-    max-width: 40px;
+  max-width: 40px;
 }
 
 .header-navigation {
-    display: flex;
-    align-items: center;
-    font-size: 25px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
 }
 
 .header-navigation li {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .header-navigation li:last-child {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
+.main-container {
+  background-color: rgb(75, 75, 75);
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  column-gap: 1rem;
+  flex-grow: 1;
+}
 
-  .main-container {
-        background-color: rgb(75, 75, 75);
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        column-gap: 20px;
-    }
+.homepage-photo {
+  max-width: 40%;
+}
 
-    .homepage-photo {
-        max-width: 40%;
-    }
+.homepage-info p {
+  color: #fff;
+  background-color: black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
 
-    .homepage-info p {
-        color: #fff;
-        background-color: black;
-        border-radius: 20px;
-        padding: 10px;
-    }
-
-    /* Sidebar*/
+/* Sidebar*/
 .sidebar {
-    padding: 10px;
-    display: grid;
-    justify-content: start;
-    align-content: center;
-
+  padding: 10px;
+  display: grid;
+  justify-content: start;
+  align-content: center;
 }
-    .sidebar-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    }
+.sidebar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+}
 
-    .sidebar-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 40px 0;
-    }
+.sidebar-item i {
+  font-size: 50px;
+}
 
-    .sidebar-item i {
-        font-size: 50px;
-    }
+.sidebar-description {
+  background-color: rgb(177, 174, 174);
+  margin-top: 5px;
+}
 
-    .sidebar-description {
-        background-color: rgb(177, 174, 174);
-        margin-top: 5px;
-    }
+/* PROJECT PAGE*/
 
-    /* PROJECT PAGE*/
+.project-main {
+  display: grid;
+  grid-template-rows: fit-content(1fr) 1fr;
+  row-gap: 50px;
+}
 
-    .project-main {
-        display: grid;
-        grid-template-rows: fit-content(1fr) 1fr;
-        row-gap: 50px;
-    }
-
-    .project-content {
-     display: grid;
-     grid-template-columns: fit-content(50%) 1fr;
-     column-gap: 30px;
-    
-    }
-    .project-img {
-    object-fit: cover;
-    width: 100%;
-    align-self: center;
-    }
-    .project-main h3 {
-        font-family: var(--secondary-font);
+.project-content {
+  display: grid;
+  grid-template-columns: fit-content(50%) 1fr;
+  column-gap: 30px;
+}
+.project-img {
+  object-fit: cover;
+  width: 100%;
+  align-self: center;
+}
+.project-main h3 {
+  font-family: var(--secondary-font);
   font-size: 25px;
   text-align: center;
   text-decoration: underline;
-    }
-    
-
-
-    .project-description {
-        align-self: center;
-    }
-    .project-info {
-        align-self: center;
-        
-    }
-    .project-link {
-     background-color: rgb(45, 44, 44);
-     color: #fff;
-     padding: 5px 10px;
-
-    }
-
-    .back-link {
-        font-size: 50px;
-        font-family: var(--secondary-font);
-    }
-
-    /* README SECTION */
-    .readme-content {
-     text-align: center;
-    }
-
-    /*ABOUT ME PAGE */
-
-    .questionnare-section {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-
-
-    }
-
-    .questionaare-head {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-    }
-
-
-    .questionaare-head img {
-        max-width: 20%;
-        border: 10px solid #fff;
-    }
-    .question-answer-section {
-        display: flex;
-        flex-direction: column;
-    }
-    .question {
-        color: #fff;
-        background-color: #000
-    }
-    
-    /*CONTACT PAGE*/
-
-    .contact-form {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        border: 3px solid #000;
-        padding: 10px;
-    }
-
-    .contact-form-buton {
-        width: fit-content;
-        display: block;
-        margin: 0 auto;
-        background-color: #000;
-        color: #fff;
-        padding: 5px 20px;
-    }
-
-    .social-links{
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        justify-content: center;
-        margin: 20px;
-    }
-
-    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        font-family: var(--main-font)
-      }
-
-    .social-links a {
-        font-size: 35px;
-    }
-    
-    footer{
-        display: flex;
-        justify-content: space-between;
-        grid-column: 1 / 9;
-        background-color: rgb(39, 39, 39);
-        color: #fff;
-        padding: 20px 200px;
-
-    }
-
-    footer p {
-        font-family: var(--secondary-font);
-        font-size: 30px;
-    }
-    footer a {
-        background-color: #000;
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        padding: 0px 40px;
-    }
-@media (max-width: 550px) {
-header {
-    padding: 0 30px;
 }
- main {
+
+.project-description {
+  align-self: center;
+}
+.project-info {
+  align-self: center;
+}
+.project-link {
+  background-color: rgb(45, 44, 44);
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.back-link {
+  font-size: 50px;
+  font-family: var(--secondary-font);
+}
+
+/* README SECTION */
+.readme-content {
+  text-align: center;
+}
+
+/*ABOUT ME PAGE */
+
+.questionnare-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.questionaare-head {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.questionaare-head img {
+  max-width: 20%;
+  border: 10px solid #fff;
+}
+.question-answer-section {
+  display: flex;
+  flex-direction: column;
+}
+.question {
+  color: #fff;
+  background-color: #000;
+}
+
+/*CONTACT PAGE*/
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 3px solid #000;
+  padding: 10px;
+}
+
+.contact-form-buton {
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 20px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: var(--main-font);
+}
+
+.social-links a {
+  font-size: 35px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  grid-column: 1 / 9;
+  background-color: rgb(39, 39, 39);
+  color: #fff;
+  padding: 1rem 3rem;
+}
+
+footer p {
+  font-family: var(--secondary-font);
+  font-size: 30px;
+}
+footer a {
+  background-color: #000;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 0px 40px;
+  white-space: nowrap;
+  height: 2.5rem;
+}
+@media (max-width: 550px) {
+  header {
+    padding: 0 30px;
+  }
+  main {
     margin: 15px;
     padding: 20px;
     box-shadow: 5px 5px rgb(39, 39, 39);
- }
+  }
 
- h1 {
+  h1 {
     font-size: 25px;
- }
+  }
 
- h2 {
+  h2 {
     font-size: 20px;
- }
+  }
 
-    .header-navigation li {
-        margin-right: 15px;
-    }
+  .header-navigation li {
+    margin-right: 15px;
+  }
 
-    .icons {
-        display: none;
-    }
+  .icons {
+    display: none;
+  }
 
-    .main-container {
-        display: flex;
-        flex-direction: column;
-    }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .sidebar {
-        display: inline-block;
-    }
-    .sidebar-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+  .sidebar {
+    display: inline-block;
+  }
+  .sidebar-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
-    }
+  .sidebar-item {
+    margin: 0;
+  }
 
-    .sidebar-item {
-        margin: 0;
-    }
+  .project-content {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .project-content {
-        display: flex;
-        flex-direction: column;
-    }
+  .project-content p {
+    font-size: 20px;
+  }
 
-    .project-content p {
-        font-size: 20px;
-    }
+  .questionaare-head {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .questionaare-head {
-        display: flex;
-        flex-direction: column;
+  .questionaare-head h4 {
+    font-size: 14px;
+  }
 
-    }
-
-    .questionaare-head h4 {
-        font-size: 14px;
-    }
+  footer a {
+    font-size: 10px;
+    padding: 0.25rem 0.5rem;
     
+}
+footer p {
+    font-size: 20px;
+  }
 }
