@@ -81,7 +81,7 @@ header {
 }
 
 .homepage-photo {
-  max-width: 40%;
+  max-width: 30%;
 }
 
 .homepage-info p {
@@ -130,13 +130,14 @@ header {
 
 .project-content {
   display: grid;
-  grid-template-columns: fit-content(50%) 1fr;
-  column-gap: 30px;
+  grid-template-rows: 1fr fit-content(1fr);
+  
 }
 .project-img {
   object-fit: cover;
   width: 100%;
   align-self: center;
+  margin-bottom: 5px;
 }
 
 .project-title{
